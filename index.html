@@ -1,13 +1,289 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maliki Blog</title>
+    <title>AUTO CENTER KELLA</title>
+    <link rel="icon" href="./assets/images/client-logo-img/logo.jpeg" type="image/icon type">
+
+    <!--========== CSS ==========-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/index.css" />
+    <link rel="stylesheet" href="./src/Utility.css" />
+    <link rel="stylesheet" href="./src/mediaQuery.css" />
+
+    <!--========== BOX ICONS ==========-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--====== AOS ======--->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
+    
+    <!--========== HEADER ==========-->
+    <header class="l-header bg-black p-0 lg:p-5" id="header">
+      <nav class="nav bd-container">
+        <a href="./index.html" class="nav__logo brand flex"
+          ><img src="./assets/images/client-logo-img/logo-removebg-preview.png" alt="" class="w-full lg:w-[600px] lg:h-28 h-full  lg:w-80"></a
+        >
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./3D.html" class="nav__link text-lg text-yellow-300 hover:text-black">3D uitlijnen</a>
+            </li>
+            <li class="nav__item">
+              <a href="./Diagnose.html" class="nav__link text-lg text-yellow-300 hover:text-black">Diagnose</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <!--========== HEADER ==========-->
+
+    <!--========== HERO SECTION ==========-->
+    <div class="w-full h-full flex justify-center">
+      <img src="assets/images/hero-img/bannerpic.jpg" alt="whiteCar" />
+    </div>
+    <!--========== HERO SECTION ==========-->
+
+    <!--========== ABOUT SECTION ==========-->
+    <section class="w-full h-full  grid lg:grid-cols-3 lg:p-12 bg-black">
+      <div class="card-one w-full h-full text-center overflow-hidden">
+        <h1
+          class="text-2xl lg:text-3xl font-semibold lg:font-extrabold xl:text-4xl mt-2 p-4 overflow-hidden"
+          data-aos="zoom-in"
+        >
+          AUTO CENTER KELLA
+        </h1>
+      </div>
+
+      <div class="card-one w-full h-full text-center overflow-hidden">
+        <h1
+          class="text-xl lg:text-xl font-semibold lg:font-extrabold p-2 overflow-hidden"
+          data-aos="zoom-in"
+        >
+          BEST SERVICE FOR YOUR CAR
+        </h1>
+      </div>
+
+      <div class="card-one w-full h-full text-center overflow-hidden p-8">
+        <p class="lg:text-lg text-base" data-aos="zoom-in">
+          Onze garage is opgericht in 2012. Wij willen ons onderscheiden door
+          een persoonlijkere aanpak en alternatieve oplossingen. <br />
+          <br />
+          Bij Auto Center Kella is uw auto in vertrouwde handen. Auto Center
+          Kella onderscheidt zich door gedegen vakmanschap, een uitstekende
+          werkplaats, goede service en persoonlijke aandacht voor iedere klant.
+          <br />
+          <br />
+          Wij zijn vooraf helder over de kosten en gebruiken alleen
+          kwaliteitsonderdelen.
+        </p>
+      </div>
+    </section>
+    <!--========== ABOUT SECTION ==========-->
+
+    <!--========== SERVICES SECTION ==========-->
+    <div class="w-full h-full mt-12 bg-black">
+      <div class="w-full h-full grid lg:grid-cols-2 gap-3 p-8">
+        <div class="our-services overflow-hidden p-2">
+          <h1 class="text-xl text-center lg:text-3xl xl:text-4xl font-semibold  lg:font-extrabold overflow-hidden p-1" data-aos="fade-right">
+          Onze diensten
+          </h1>
+        </div>
+
+        <div class="text overflow-hidden">
+          <p class="lg:text-lg text-base text-center overflow-hidden" data-aos="fade-left">
+          Of uw auto nu een eenvoudige onderhoudsbeurt of een grote reparatie nodig heeft, wij staan voor u klaar. Van motordiagnostiek tot remreparaties, van ophangingswerkzaamheden tot transmissieservices, onze bekwame technici hebben de expertise om elke klus, groot of klein, aan te kunnen. We gebruiken onderdelen van hoge kwaliteit en volgen de beste praktijken uit de sector om uw voertuig weer optimaal te laten presteren.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-3 p-2 lg:p-8">
+        <div class="card-one  w-full  text-center p-10 mb-2 lg:p-10  border border-white rounded-lg shadow-lg"  data-aos="zoom-in">
+            <h2 class="text-xl lg:text-xl  xl:text-xl text-center font-semibold">3D uitlijnen</h2>
+          </div>
+
+          <div class="card-one  w-full  text-center p-10 mb-2 lg:p-10   border border-white rounded-lg shadow-lg"  data-aos="zoom-in">
+            <h2 class="text-xl lg:text-xl  xl:text-xl text-center  font-semibold">Diagnose</h2>
+          </div>
+
+          <div class="card-one  w-full  text-center p-10 mb-2  lg:p-10 border border-white rounded-lg shadow-lg"  data-aos="zoom-in">
+            <h2 class="text-xl lg:text-xl  xl:text-xl text-center font-semibold">Herstellingen</h2>
+          </div>
+
+          <div class="card-one  w-full  text-center p-10 lg:p-10  border border-white rounded-lg shadow-lg"  data-aos="zoom-in">
+            <h2 class="text-xl lg:text-xl  xl:text-xl text-center font-semibold">Autoruiten herstellen  en vervangen</h2>
+        </div>
+      </div>
+
+
+
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-3 p-2 lg:p-8 text-center">
+        <div class="card-one  w-full  text-center p-10 mb-2 lg:p-10  border border-white rounded-lg shadow-lg"  data-aos="zoom-in">
+            <h2 class="text-xl lg:text-xl  xl:text-xl text-center font-semibold">Onderhoud Airco's</h2>
+          </div>
+
+          <div class="card-one  w-full  text-center p-10 mb-2 lg:p-10   border border-white rounded-lg shadow-lg"  data-aos="zoom-in">
+            <h2 class="text-xl lg:text-xl  xl:text-xl text-center font-semibold">Banden</h2>
+          </div>
+
+          <div class="card-one  w-full  text-center p-10 mb-2  lg:p-10 border border-white rounded-lg shadow-lg"  data-aos="zoom-in">
+            <h2 class="text-xl lg:text-xl  xl:text-xl text-center font-semibold">Keuringsnazicht</h2>
+          </div>
+
+          <div class="card-one  w-full  text-center p-10 lg:p-10  border border-white rounded-lg shadow-lg"  data-aos="zoom-in">
+            <h2 class="text-xl lg:text-lg  xl:text-lg text-center font-semibold">Verzekeringsoffertes</h2>
+        </div>
+      </div>
+    </div>
+    <!--========== SERVICES SECTION ==========-->
+
+     <!--========== CLIENT SECTION ==========-->
+     <div class="w-full h-full mt-12 bg-black">
+      <div class="w-full h-full dot flex justify-start  gap-2 lg:gap-8 p-4"  data-aos="fade-right">
+        <img src="./assets/images/client-logo-img/dot.svg" alt="dot" />
+        <p class="text-base lg:text-2xl w-full font-semibold">
+        Wij begrijpen dat autoreparaties en -onderhoud lastig en duur kunnen zijn. Daarom streven wij ernaar om het proces zo zorgeloos en betaalbaar mogelijk te maken voor onze klanten. We bieden flexibele planningsopties die
+         passen bij uw drukke levensstijl, en onze 
+         concurrerende prijzen zorgen ervoor dat u de beste waar voor uw geld krijgt.
+        </p>
+      </div>
+
+    
+      <div class="p-14 lg:p-12 flex justify-center">
+      <img src="./assets/images/client-logo-img/features.png" alt="" />
+      </div>
+
+    </div>
+      <!--========== CLIENT SECTION ==========-->
+
+        <!--========== 3D SECTION ==========-->
+        <div class="w-full h-full mt-12 overflow-hidden bg-black">
+          <div class="w-full h-full flex justify-between gap-8 p-8 lg:p-14">
+            <div class="our-services " data-aos="fade-down-right">
+            <h1 class="text-lg  lg:text-3xl xl:text-4xl  font-semibold  lg:font-extrabold">3D uitlijnen</h1> 
+            </div>
+    
+            <div class="text w-1/2 flex justify-end gap-10 mt-0 lg:mt-1"  data-aos="fade-down-left">
+              
+              <p class=" text-xl lg:text-2xl mt-0 lg:mt-1 cursor-pointer"><a href="./3D.html">More</a></p>
+              
+              <div class="mt-2 text-xl lg:text-2xl"><a href="./3D.html"><i class="bi bi-arrow-right"></i></a></div>
+            </div>
+          </div>
+         
+  <!--========== 3D GALLERY SECTION ==========-->
+  <div class="w-full h-full mt-12  overflow-hidden">
+    <div class="car-one w-full h-full grid lg:grid-cols-4 grid-cols-2 gap-3 p-4 lg:p-12  overflow-hidden   rounded-lg" data-aos="fade-in-up">
+          <img src="./assets/images/client-logo-img//engine5.jpg" alt=""  class="rounded-lg object-cover w-full h-full"/>
+          <img src="./assets/images/client-logo-img//engine1.jpg" alt=""  class="rounded-lg object-cover w-full h-full"/>
+          <img src="./assets/images/client-logo-img//engine2.jpg" alt=""  class="rounded-lg object-cover w-full h-full"/>
+          <img src="./assets/images/client-logo-img//engine4.jpg" alt=""  class="rounded-lg object-cover w-full h-full"/>
+    </div>
+  </div>
+    <!--========== 3D GALLERY SECTION ==========-->
+
+        </div>
+          <!--========== 3D SECTION ==========-->
+
+          
+    
+          
+
+
+                <!--========== FOOTER ==========-->
+                <div class="w-full h-full text-center  bg-black text-white">
+                  <h1 class="text-3xl lg:text-5xl font-bold text-white p-4 text-yellow-300 text-center block lg:hidden">AUTO CENTER KELLA</h1>
+               <div class="grid grid-cols-1 lg:grid-cols-4 mt-10 p-0 lg:p-10 text-center"> 
+                 <div class="brand  hidden lg:grid">
+                   <h1 class="text-2xl lg:text-3xl xl:text-4xl font-bold text-yellow-300">AUTO CENTER KELLA</h1>
+                 </div>
+         
+                 <div class="homes  mb-8">
+                   <p class="mb-4 font-sans text-xl lg:text-2xl text-yellow-300">Contacteer ons</p>
+                   <ul>
+                   <li>
+                     <a href="" class="text-white hover:text-yellow-300">Voor vragen en opmerkingen kunt u altijd bij ons terecht.</a>
+                   </li>
+                   <li>
+                     <a href="" class="text-white hover:text-yellow-300">Website: <span class=" text-yellow-300">http://www.autocenterkella.com</span></a>
+                   </li>
+                   <li>
+                     <a href="" class="text-white hover:text-yellow-300">Email:  : <span class=" text-yellow-300">info@autocenterkella.com</span></a>
+                   </li>
+                   </ul>
+                 </div>
+         
+                 <div class="Blogs mb-8">
+                   <p class="mb-4 font-sans text-xl lg:text-2xl  text-yellow-300">AUTO CENTER KELLA</p>
+                   <ul>
+                   <li>
+                     <a href="" class="text-white hover:text-yellow-300">Industrielaan 82 bus 5/6</a>
+                   </li>
+                   <li>
+                     <a href="" class="text-white hover:text-yellow-300">3630 Maasmechelen</a>
+                   </li>
+                   <li>
+                     <a href="" class="text-white hover:text-yellow-300">Tel: +32 (0)89 203 179</a>
+                   </li>
+                   <li>
+                     <a href="" class="text-white hover:text-yellow-300">Gsm: +32 (0)475 40 58 05</a>
+                   </li>
+                   </ul>
+                 </div>
+         
+                 <div class="Service  mb-8">
+                   <p class="mb-4 font-sans  text-yellow-300 text-xl lg:text-2xl">Maandag tot en met donderdag:</p>
+                   <ul>
+                   <li>
+                     <a href="" class="text-white hover:text-yellow-300">09:00 - 13:00 | 13:45 - 18:00 </a>
+                   </li>
+                   <li>
+                     <a href="" class=" text-yellow-300 hover:text-yellow-300">Vrijdag: </a>
+                   </li>
+                   <li>
+                     <a href="" class="text-white hover:text-yellow-300">Gesloten</a>
+                   </li>
+                   <li>
+                     <a href="" class="text-yellow-300 hover:text-yellow-300">Zaterdag: </a>
+                   </li>
+                   <li>
+                     <a href="" class="text-white hover:text-yellow-300">09:00 - 13:00 | 13:30 - 14:00</a>
+                   </li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+                  <!--========== FOOTER ==========-->
+
+
+
+    <!--========== CUSTOM JS ==========-->
+    <script src="./js/index.js"></script>
+
+     <!--========== AOS JS ==========-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
