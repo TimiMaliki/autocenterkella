@@ -61,7 +61,7 @@ i{
     /* background: #000; */
     transition: .4s;
     box-shadow: 0 4px 4px rgba(0,0,0,.1);
-    border-radius: 0 0 1rem 1rem;
+    /* border-radius: 0 0 1rem 1rem; */
     z-index: var(--z-fixed);
   }
 
